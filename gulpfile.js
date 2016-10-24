@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var connect = require('gulp-connect');
 var del = require('del');
 var runSequence = require('run-sequence');
+var handlebars = require('gulp-compile-handlebars');
+var fs = require('fs');
 
 gulp.task('sass', ['clean'], function () {
     return gulp.src('source/scss/**/*.scss')
@@ -16,7 +18,6 @@ gulp.task('sass', ['clean'], function () {
 //copy files
 
 gulp.task('copy', function () {
-    gulp.src('source/**/*.html').pipe(gulp.dest('build/'));
     gulp.src('source/js/**/*.js').pipe(gulp.dest('build/js'));
     gulp.src('source/images/**/*.js').pipe(gulp.dest('build/images'));
 });
@@ -37,10 +38,20 @@ gulp.task('server', function () {
 });
 
 gulp.task('build', function (callback) {
-    runSequence(['clean', 'sass', 'copy'],
+    runSequence(['clean', 'sass', 'handlebars', 'copy'],
         callback
     )
-})
+});
+
+gulp.task('handlebars', function () {
+    var templateData = JSON.parse(fs.readFileSync('./source/config/handlebars.json'));
+    var options = {
+        ignorePartials: true,
+        batch: ['./source/partials'],
+        helpers: {}
+    }
+    return gulp.src('source/pages/*.html').pipe(handlebars(templateData, options)).pipe(gulp.dest('build'));
+});
 
 gulp.task('default', function (callback) {
     runSequence(['build', 'server', 'watch'], callback);

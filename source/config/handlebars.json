@@ -1,0 +1,13 @@
+{
+  "menu": [
+    {
+      "label": "home",
+      "url": "index.html"
+    },
+    {
+      "label": "Algemene info",
+      "url": "algemeen.html"
+    }
+  ],
+  "firstName": "Kees"
+}
