@@ -1,4 +1,31 @@
-<h1>{{title}}</h1>
-{{#each menu}}
-<a href="{{url}}">{{label}}</a>
-{{/each}}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Steven Braham, stevenbraham@gmail.com"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="copyright" content="Braham.biz"/>
+    <meta name="language" content="NL"/>
+    <meta name="description" content="{{description}}"/>
+    <meta name="keywords" content="{{keywords}}"/>
+    {{#each stylesheets}}
+    <link rel="stylesheet" type="text/css" href="{{this}}"/>
+    {{/each}}
+</head>
+<body>
+<header>
+    <nav id="topNav">
+        <ul>
+            {{#each headerMenu}}
+            <li>
+                <a href="{{url}}">{{label}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </nav>
+    <div>
+        <h1>{{title}}</h1>
+    </div>
+</header>
+<main>

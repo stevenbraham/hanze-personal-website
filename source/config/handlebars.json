@@ -1,5 +1,5 @@
 {
-  "menu": [
+  "headerMenu": [
     {
       "label": "home",
       "url": "index.html"
@@ -7,7 +7,15 @@
     {
       "label": "Algemene info",
       "url": "algemeen.html"
+    },
+    {
+      "label": "Vrije tijd",
+      "url": "vrije-tijd.html"
     }
   ],
-  "firstName": "Kees"
+  "stylesheets": [
+    "//fonts.googleapis.com/css?family=Istok+Web",
+    "//yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css",
+    "css/style.css"
+  ]
 }

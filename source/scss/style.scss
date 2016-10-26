@@ -1,0 +1,75 @@
+//colors
+$primary-color: #4285F4;
+$border-color: #43CEAA;
+
+$footer-height: 50px;
+$line-height: 10px;
+$header-height: 300px;
+
+//applied left AND right of each content block to emulate the bootstrap container layout
+$padding: 13vw;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Istok Web', sans-serif;
+  margin: 0px;
+}
+
+header {
+  height: $header-height;
+  border-bottom: $line-height solid $border-color;
+}
+
+header, footer, main {
+  padding: 0px $padding 0px;
+}
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary-color;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  font-weight: bolder;
+}
+
+//TOP NAV
+#topNav {
+  position: absolute;
+  top: 0px;
+  text-transform: uppercase;
+  width: (100vw - 2*$padding);
+}
+
+#topNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topNav li {
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+#topNav li.active, #topNav li:hover, #topNav li:focus {
+  border-bottom: solid 2px white;
+
+}
+
+footer {
+  height: $footer-height;
+  border-top: $line-height solid $border-color;
+}
+
