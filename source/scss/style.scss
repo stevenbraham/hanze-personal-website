@@ -11,7 +11,7 @@ $border-color: #43CEAA;
 
 $footer-height: 50px;
 $line-height: 10px;
-$header-height: 300px;
+$header-height: 40vh;
 
 //applied left AND right of each content block to emulate the bootstrap container layout
 $padding: 13vw;
@@ -26,6 +26,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   background: $primary-color;
+  color: white;
 }
 
 nav a {
@@ -43,6 +44,17 @@ nav li {
   text-align: center;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+/* Classes */
+
+.line {
+  width: 2px;
+  background: #ffffff;
+}
+
 /*
 "Grid"
 */
@@ -50,11 +62,35 @@ header, footer, main {
   padding: 0px $padding 0px;
 }
 
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+//generate col structure
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage((1/12)*$i);
+  }
+}
+
 /* Header elements */
 
 header {
   height: $header-height;
   border-bottom: $line-height solid $border-color;
+}
+
+#main-logo {
+  background: url('/images/logo.svg') center center no-repeat;
+  background-size: contain;
+  height: $header-height * (2/3);
+  width: 45%;
+}
+
+#page-specific-info {
+  width: 45%;
 }
 
 #topNav {
@@ -69,12 +105,16 @@ header {
   justify-content: space-between;
 }
 
-#topNav li {
-  line-height: 2em;
+#topNav li, #topNav a {
   width: 100%;
 }
 
-#topNav li.active, #topNav li:hover, #topNav li:focus {
+#topNav a {
+  display: inline-block;
+  line-height: 2em;
+}
+
+#topNav a.active, #topNav a:hover, #topNav a:focus {
   border-bottom: solid 2px #ffffff;
 }
 

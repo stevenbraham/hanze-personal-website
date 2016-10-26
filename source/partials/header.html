@@ -16,16 +16,25 @@
 <body>
 <header>
     <nav id="topNav">
+
         <ul>
             {{#each headerMenu}}
             <li>
-                <a href="{{url}}">{{label}}</a>
+                <a href="{{url}}" class="{{#compare ../pageId id operator='=='}}active{{/compare}}">{{label}}</a>
             </li>
             {{/each}}
         </ul>
     </nav>
-    <div>
-        <h1>{{title}}</h1>
+    <div class="row">
+        <div id="main-logo">
+
+        </div>
+        <div class="line">
+
+        </div>
+        <div id="page-specific-info">
+            <h1>{{title}}</h1>
+        </div>
     </div>
 </header>
 <main>

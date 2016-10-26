@@ -1,18 +1,22 @@
 {
   "headerMenu": [
     {
+      "id": "home",
       "label": "home",
       "url": "index.html"
     },
     {
+      "id": "generalInfo",
       "label": "Algemene info",
       "url": "algemeen.html"
     },
     {
+      "id": "hobbies",
       "label": "Vrije tijd",
       "url": "vrije-tijd.html"
     },
     {
+      "id": "future",
       "label": "Toekomst",
       "url": "toekomst.html"
     }
