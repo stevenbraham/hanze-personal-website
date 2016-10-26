@@ -1,8 +1,13 @@
 </main>
 <footer>
-    <nav>
-        <a href="f">f</a>
-        <a href="">f</a>
+    <nav id="bottomNav">
+        <ul>
+            {{#each footerMenu}}
+            <li>
+                <a href="{{url}}">{{label}}</a>
+            </li>
+            {{/each}}
+        </ul>
     </nav>
 </footer>
 

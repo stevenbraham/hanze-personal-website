@@ -1,3 +1,10 @@
+/*
+Theme Name: Lars clean blue
+Description: A css theme I had to develop for school
+Author: Steven Braham
+Author URI: https://braham.biz
+*/
+
 //colors
 $primary-color: #4285F4;
 $border-color: #43CEAA;
@@ -9,22 +16,9 @@ $header-height: 300px;
 //applied left AND right of each content block to emulate the bootstrap container layout
 $padding: 13vw;
 
-html, body {
-  height: 100%;
-}
-
+/* General HTML tags */
 body {
   font-family: 'Istok Web', sans-serif;
-  margin: 0px;
-}
-
-header {
-  height: $header-height;
-  border-bottom: $line-height solid $border-color;
-}
-
-header, footer, main {
-  padding: 0px $padding 0px;
 }
 
 header, footer {
@@ -43,7 +37,26 @@ nav a:hover, nav a:focus {
   font-weight: bolder;
 }
 
-//TOP NAV
+nav li {
+  display: inline-block;
+  text-align: center;
+  text-align: center;
+}
+
+/*
+"Grid"
+*/
+header, footer, main {
+  padding: 0px $padding 0px;
+}
+
+/* Header elements */
+
+header {
+  height: $header-height;
+  border-bottom: $line-height solid $border-color;
+}
+
 #topNav {
   position: absolute;
   top: 0px;
@@ -57,19 +70,28 @@ nav a:hover, nav a:focus {
 }
 
 #topNav li {
-  display: inline-block;
   line-height: 2em;
-  text-align: center;
   width: 100%;
 }
 
 #topNav li.active, #topNav li:hover, #topNav li:focus {
-  border-bottom: solid 2px white;
-
+  border-bottom: solid 2px #ffffff;
 }
+
+/* Footer elements */
 
 footer {
   height: $footer-height;
   border-top: $line-height solid $border-color;
 }
+
+#bottomNav li {
+  border-right: 1px solid #ffffff;
+  padding: 5px;
+}
+
+#bottomNav li:last-child {
+  border: none;
+}
+
 
