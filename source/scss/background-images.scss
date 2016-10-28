@@ -1,0 +1,17 @@
+/* Item or page specific images */
+
+#page-home header {
+  background-image: url('/images/header/home-1x.jpg');
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  #page-home header {
+    background-image: url('/images/header/home-2x.jpg');
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  #page-home header {
+    background-image: url('/images/header/home-3x.jpg');
+  }
+}

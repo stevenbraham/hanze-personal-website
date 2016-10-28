@@ -1,0 +1,47 @@
+/* Styles for mobile devices */
+$mobilePadding: 5vw;
+@media only screen and (max-device-height: 850px) and (max-device-height: 850px) {
+  header, footer, main {
+    padding: 0px $mobilePadding 0px;
+  }
+
+  #topNav {
+    width: 100%;
+    background: $primary-color;
+  }
+
+  #topNav a.active, #topNav a:hover, #topNav a:focus {
+    border: none;
+    background: lighten($primary-color, 10%);
+  }
+
+  #topNav a {
+
+  }
+
+  #line {
+    display: none;
+  }
+
+  #main-logo {
+    height: 30vh;
+    margin-bottom: 5px;
+  }
+
+  div[class^="col"], #main-logo, #page-specific-info {
+    width: 100%;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  header .row {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
