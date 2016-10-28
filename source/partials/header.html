@@ -2,13 +2,18 @@
 <html lang="nl">
 <head>
     <title>{{title}}</title>
+
+    <link rel="icon" href="images/favicons/base.png"/>
     <meta charset="UTF-8"/>
-    <meta name="author" content="Steven Braham, stevenbraham@gmail.com"/>
-    <meta name="robots" content="index,follow"/>
-    <meta name="copyright" content="Braham.biz"/>
-    <meta name="language" content="NL"/>
     <meta name="description" content="{{description}}"/>
     <meta name="keywords" content="{{keywords}}"/>
+    {{#each metaTags}}
+    <meta name="{{name}}" content="{{content}}"/>
+    {{/each}}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    {{#each favIcons}}
+    <link rel="{{rel}}" type="image/png" href="/images/favicons/{{href}}"/>
+    {{/each}}
     {{#each stylesheets}}
     <link rel="stylesheet" type="text/css" href="{{this}}"/>
     {{/each}}
