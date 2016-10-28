@@ -1,0 +1,15 @@
+/* Footer elements */
+
+footer {
+  height: $footer-height;
+  border-top: $line-height solid $border-color;
+}
+
+#bottomNav li {
+  border-right: 1px solid #ffffff;
+  padding: 5px;
+}
+
+#bottomNav li:last-child {
+  border: none;
+}

@@ -10,8 +10,11 @@ var handlebars = require('gulp-compile-handlebars');
 var fs = require('fs');
 
 gulp.task('sass', ['clean'], function () {
-    return gulp.src('source/scss/**/*.scss')
-        .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    // return gulp.src('source/scss/**/*.scss')
+    //     .pipe(sass())
+    //     .pipe(gulp.dest('build/css'));
+    return gulp.src('source/scss/style.scss')
+        .pipe(sass())
         .pipe(gulp.dest('build/css'));
 });
 

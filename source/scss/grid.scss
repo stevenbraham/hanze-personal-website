@@ -1,0 +1,17 @@
+/*
+"Grid"
+*/
+header, footer, main {
+  padding: 0px $padding 0px;
+}
+
+.row {
+  width: 100%;
+}
+
+//generate col structure
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage((1/12)*$i);
+  }
+}
