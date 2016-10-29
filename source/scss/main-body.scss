@@ -1,0 +1,38 @@
+/* Main body styles */
+main {
+  margin: 2em 0 2em;
+}
+
+main p {
+  color: #373737;
+}
+
+main h2 {
+  color: $primary-color;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: 2px solid $border-color;
+  margin: auto;
+  width: 320px;
+  text-align: center;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+@media screen and (min-height: 1080px) {
+  img {
+    height: 250px;
+  }
+}
+
+.center {
+  margin: auto;
+}
+
+.circle {
+  border-radius: 100%;
+}
