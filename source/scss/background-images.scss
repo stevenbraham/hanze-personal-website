@@ -1,53 +1,32 @@
 /* Item or page specific images */
+//image array
+$images: (
+        "#page-home header": "header/home",
+        "#image-button-general-info":"buttons/general-info",
+        "#image-button-hobbies":"buttons/hobbies",
+        "#image-button-future":"buttons/future"
+);
 
-#page-home header {
-  background-image: url('/images/header/home-1x.jpg');
-}
-
-#image-button-general-info {
-  background-image: url('/images/buttons/general-info-1x.jpg');
-}
-
-#image-button-hobbies {
-  background-image: url('/images/buttons/hobbies-1x.jpg');
-}
-
-#image-button-future {
-  background-image: url('/images/buttons/future-1x.jpg');
+@each $selector, $path in $images {
+  #{$selector} {
+    background-image: url('/images/#{$path}-1x.jpg');
+  }
 }
 
 /* 2x styles */
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
-  #page-home header {
-    background-image: url('/images/header/home-2x.jpg');
-  }
-  #image-button-general-info {
-    background-image: url('/images/buttons/general-info-2x.jpg');
-  }
-
-  #image-button-hobbies {
-    background-image: url('/images/buttons/hobbies-2x.jpg');
-  }
-
-  #image-button-future {
-    background-image: url('/images/buttons/future-2x.jpg');
+  @each $selector, $path in $images {
+    #{$selector} {
+      background-image: url('/images/#{$path}-2x.jpg');
+    }
   }
 }
 
 /* 3x styles */
 @media screen and (min-width: 2560px) {
-  #page-home header {
-    background-image: url('/images/header/home-3x.jpg');
-  }
-  #image-button-general-info {
-    background-image: url('/images/buttons/general-info-3x.jpg');
-  }
-
-  #image-button-hobbies {
-    background-image: url('/images/buttons/hobbies-3x.jpg');
-  }
-
-  #image-button-future {
-    background-image: url('/images/buttons/future-3x.jpg');
+  @each $selector, $path in $images {
+    #{$selector} {
+      background-image: url('/images/#{$path}-3x.jpg');
+    }
   }
 }
