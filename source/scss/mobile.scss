@@ -36,7 +36,7 @@ $mobilePadding: 5vw;
     height: 100vh;
   }
 
-  header .row {
+  .row {
     flex-wrap: wrap;
   }
 
@@ -47,5 +47,10 @@ $mobilePadding: 5vw;
 
   #scroll-down {
     display: block;
+  }
+
+  .image-button {
+    width: 60%;
+    margin: auto;
   }
 }
