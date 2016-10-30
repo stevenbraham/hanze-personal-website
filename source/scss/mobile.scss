@@ -1,6 +1,6 @@
 /* Styles for mobile devices */
 $mobilePadding: 5vw;
-@media only screen and (max-device-height: 850px) and (max-device-height: 850px) {
+@media only screen and (max-width: 850px) and (max-width: 850px) {
   header, footer, main {
     padding: 0px $mobilePadding 0px;
   }
@@ -43,5 +43,9 @@ $mobilePadding: 5vw;
   h1 {
     font-size: 1.2em;
     text-align: center;
+  }
+
+  #scroll-down {
+    display: block;
   }
 }

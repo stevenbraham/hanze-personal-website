@@ -10,6 +10,19 @@ header, footer, main {
   padding: 5px 0px 5px;
 }
 
+div[class^="col"] {
+  margin: 0px 5px 0px;
+}
+
+/* no margin at first and last child */
+.row > div[class^="col"]:nth-child(1) {
+  margin-left: 0px;
+}
+
+.row > div[class^="col"]:last-child {
+  margin-right: 0px;
+}
+
 //generate col structure
 @for $i from 1 through 12 {
   .col-#{$i} {

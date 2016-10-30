@@ -10,7 +10,7 @@ body {
   font-family: 'Istok Web', sans-serif;
 }
 
-header, footer {
+header, footer, .image-button {
   justify-content: center;
   align-items: center;
   background: $primary-color no-repeat center center;
@@ -18,7 +18,7 @@ header, footer {
   background-size: cover;
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
 }

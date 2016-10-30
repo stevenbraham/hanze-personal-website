@@ -7,15 +7,56 @@ main p {
   color: #373737;
 }
 
-main h2 {
+h2 {
   color: $primary-color;
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: 2px solid $border-color;
-  margin: auto;
-  width: 320px;
+  width: 33%;
   text-align: center;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.image-button {
+  min-width: 100%;
+  position: relative;
+}
+
+.image-button:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* initial ratio of 1:1*/
+}
+
+.image-button-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.image-button-content h3, .image-button-content p {
+  padding: 10px;
+}
+
+.image-button-content a {
+  display: block;
+  width: 100%;
+  background: $primary-color;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  font-size: 24px;
+}
+
+.image-button p {
+  color: #ffffff;
 }
 
 img {
@@ -29,7 +70,7 @@ img {
   }
 }
 
-.center {
+.center, h2 {
   margin: auto;
 }
 
