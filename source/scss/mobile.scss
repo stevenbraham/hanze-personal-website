@@ -12,7 +12,7 @@ $mobilePadding: 5vw;
 
   #topNav a.active, #topNav a:hover, #topNav a:focus {
     border: none;
-    background: lighten($primary-color, 10%);
+    background: $primary-color-hover;
   }
 
   #topNav a {
@@ -28,7 +28,7 @@ $mobilePadding: 5vw;
     margin-bottom: 5px;
   }
 
-  div[class^="col"], #main-logo, #page-specific-info {
+  div[class^="col"], #main-logo, #page-specific-info, .scroll-up {
     width: 100%;
   }
 

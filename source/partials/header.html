@@ -37,10 +37,13 @@
         </div>
         <div id="page-specific-info">
             <h1>{{title}}</h1>
+            {{#if icon}}
+            <i class="{{icon}}" id="header-icon"></i>
+            {{/if}}
         </div>
     </div>
-    <div id="scroll-down">
+    <a id="scroll-down" class="center" href="#">
         Scroll naar beneden <i class="fa fa-chevron-down"></i>
-    </div>
+    </a>
 </header>
 <main>

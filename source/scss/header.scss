@@ -3,6 +3,7 @@
 header {
   height: $header-height;
   border-bottom: $line-height solid $border-color;
+  text-transform: uppercase;
 }
 
 header .row {
@@ -31,6 +32,7 @@ header .row {
 
 #page-specific-info, #main-logo {
   width: 45%;
+  text-align: center;
 }
 
 #topNav {
@@ -51,6 +53,10 @@ header .row {
 
 #topNav a.active, #topNav a:hover, #topNav a:focus {
   border-bottom: solid 2px #ffffff;
+}
+
+#header-icon {
+  font-size: 3.5em;
 }
 
 #scroll-down {

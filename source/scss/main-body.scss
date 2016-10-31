@@ -8,17 +8,25 @@ main p {
 }
 
 h2 {
-  color: $primary-color;
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: bold;
   border-bottom: 2px solid $border-color;
   width: 33%;
+
+}
+
+h2, figcaption, h3 {
+  color: $primary-color;
+}
+
+h2, figcaption {
   text-align: center;
 }
 
-h3 {
+h3, figcaption {
   font-size: 1.1em;
+  padding: 1em 0px 1em;
 }
 
 .image-button {
@@ -41,6 +49,7 @@ h3 {
 }
 
 .image-button-content h3, .image-button-content p {
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -55,8 +64,8 @@ h3 {
   font-size: 24px;
 }
 
-.image-button p {
-  color: #ffffff;
+.image-button-content a:hover {
+  background: $primary-color-hover;
 }
 
 img {
@@ -70,10 +79,24 @@ img {
   }
 }
 
-.center, h2 {
+.center, h2, figcaption {
+  display: block;
   margin: auto;
 }
 
 .circle {
   border-radius: 100%;
+}
+
+/* scroll up button */
+#scroll-up {
+  background: $border-color;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33%;
+}
+
+#scroll-up:hover {
+  background: $border-color-hover;
 }

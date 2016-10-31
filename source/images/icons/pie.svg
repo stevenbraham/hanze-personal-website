@@ -1,0 +1,11 @@
+<svg width="250px" height="250px" viewBox="200 601 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="pie-chart-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(200.000000, 601.000000)">
+        <g id="Layer_1" fill="#545454">
+            <path d="M117.1875,0 C52.4750977,0 0,52.4750977 0,117.1875 L117.1875,117.1875 L117.1875,0 L117.1875,0 Z M101.5625,101.5625 L16.8154297,101.5625 C23.574707,58.0444336 58.0444336,23.574707 101.5625,16.8154297 L101.5625,101.5625 L101.5625,101.5625 Z M250,132.8125 C250,197.524902 197.524902,250 132.8125,250 C68.1000977,250 15.625,197.524902 15.625,132.8125 L132.8125,132.8125 L132.8125,15.625 C197.524902,15.625 250,68.1000977 250,132.8125 L250,132.8125 Z"
+                  id="Shape"></path>
+        </g>
+    </g>
+</svg>
