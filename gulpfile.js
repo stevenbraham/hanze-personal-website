@@ -7,6 +7,8 @@ var connect = require('gulp-connect');
 var del = require('del');
 var runSequence = require('run-sequence');
 var handlebars = require('gulp-compile-handlebars');
+var htmlbeautify = require('gulp-html-beautify');
+var cssbeautify = require('gulp-cssbeautify');
 var fs = require('fs');
 
 gulp.task('sass', ['clean'], function () {
@@ -15,6 +17,7 @@ gulp.task('sass', ['clean'], function () {
     //     .pipe(gulp.dest('build/css'));
     return gulp.src('source/scss/style.scss')
         .pipe(sass())
+        .pipe(cssbeautify())
         .pipe(gulp.dest('build/css'));
 });
 
@@ -100,7 +103,9 @@ gulp.task('handlebars', function () {
             }
         }
     }
-    return gulp.src('source/pages/*.html').pipe(handlebars(templateData, options)).pipe(gulp.dest('build'));
+    return gulp.src('source/pages/*.html').pipe(handlebars(templateData, options)).pipe(htmlbeautify({
+        indent_size: 4
+    })).pipe(gulp.dest('build'));
 });
 
 gulp.task('default', function (callback) {
