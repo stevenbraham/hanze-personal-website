@@ -13,8 +13,11 @@ body {
 header, footer, .image-button {
   justify-content: center;
   align-items: center;
-  background: $primary-color no-repeat center center;
   color: white;
+}
+
+header, footer, .image-button, [class^="icon-"] {
+  background: $primary-color no-repeat center center;
   background-size: cover;
 }
 
