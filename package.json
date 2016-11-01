@@ -23,7 +23,9 @@
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "^5.0.0",
     "gulp-cssbeautify": "^0.1.3",
+    "gulp-csslint": "^1.0.0",
     "gulp-html-beautify": "^1.0.1",
+    "gulp-html5-lint": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "run-sequence": "^1.2.2"
   }

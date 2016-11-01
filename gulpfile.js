@@ -10,6 +10,21 @@ var handlebars = require('gulp-compile-handlebars');
 var htmlbeautify = require('gulp-html-beautify');
 var cssbeautify = require('gulp-cssbeautify');
 var fs = require('fs');
+var html5Lint = require('gulp-html5-lint');
+var csslint = require('gulp-csslint');
+
+gulp.task('css', function () {
+    gulp.src('build/css/*.css')
+        .pipe(csslint({
+            "ids": false,
+        }))
+        .pipe(csslint.formatter());
+});
+
+gulp.task('html5-lint', function () {
+    return gulp.src('build/*.html')
+        .pipe(html5Lint());
+});
 
 gulp.task('sass', ['clean'], function () {
     // return gulp.src('source/scss/**/*.scss')
