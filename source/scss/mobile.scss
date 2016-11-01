@@ -54,4 +54,16 @@ $mobilePadding: 5vw;
     width: 60%;
     margin: auto;
   }
+
+  .split-line > div, .split-line > a, .split-line > li {
+    border: none;
+  }
+
+  footer {
+    text-align: center;
+    min-height: 153px;
+  }
+  footer li {
+    display: list-item;
+  }
 }
