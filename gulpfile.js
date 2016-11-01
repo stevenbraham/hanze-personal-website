@@ -10,23 +10,14 @@ var handlebars = require('gulp-compile-handlebars');
 var htmlbeautify = require('gulp-html-beautify');
 var cssbeautify = require('gulp-cssbeautify');
 var fs = require('fs');
-var html5Lint = require('gulp-html5-lint');
-var csslint = require('gulp-csslint');
+var gulpLoadPlugins = require('gulp-load-plugins');
+var plugins = require('gulp-load-plugins')();
 
-gulp.task('css', function () {
-    gulp.src('build/css/*.css')
-        .pipe(csslint({
-            "ids": false,
-        }))
-        .pipe(csslint.formatter());
+gulp.task('images', function () {
+    gulp.src('source/images/**/*.jpg').pipe(plugins.imagemin()).pipe(gulp.dest('build/images'));
 });
 
-gulp.task('html5-lint', function () {
-    return gulp.src('build/*.html')
-        .pipe(html5Lint());
-});
-
-gulp.task('sass', ['clean'], function () {
+gulp.task('sass', function () {
     // return gulp.src('source/scss/**/*.scss')
     //     .pipe(sass())
     //     .pipe(gulp.dest('build/css'));
@@ -59,7 +50,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('build', function (callback) {
-    runSequence(['clean', 'sass', 'handlebars', 'copy'],
+    runSequence(['clean', 'sass', 'handlebars', 'copy', 'images'],
         callback
     )
 });
