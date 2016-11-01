@@ -14,7 +14,7 @@ div[class^="col"] {
   padding: 0px 5px 0px;
 }
 
-/* no margin at first and last child */
+/* no padding at first and last child */
 .row > div[class^="col"]:nth-child(1) {
   padding-left: 0px;
 }
@@ -32,6 +32,10 @@ div[class^="col"] {
 
 /* lines */
 
-.split-line > *:nth-child(even) {
+.split-line > li, .split-line > div {
   border-left: 2px solid #ffffff;
+}
+
+.split-line > :first-child {
+  border: none;
 }

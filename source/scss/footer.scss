@@ -2,15 +2,10 @@
 
 footer {
   min-height: $footer-height;
-  border-top: $line-height solid $border-color;
+  border-top: $line-height solid;
 }
 
 #bottomNav li {
-  border-right: 1px solid #ffffff;
-  padding: 5px;
-  padding-right: 10px;
-}
-
-#bottomNav li:last-child {
-  border: none;
+  padding: 0px 5px 0px;
+  padding-right: 0px;
 }
