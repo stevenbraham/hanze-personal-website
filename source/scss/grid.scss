@@ -11,16 +11,16 @@ header, footer, main {
 }
 
 div[class^="col"] {
-  margin: 0px 5px 0px;
+  padding: 0px 5px 0px;
 }
 
 /* no margin at first and last child */
 .row > div[class^="col"]:nth-child(1) {
-  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .row > div[class^="col"]:last-child {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 
 //generate col structure
@@ -28,4 +28,10 @@ div[class^="col"] {
   .col-#{$i} {
     width: percentage((1/12)*$i);
   }
+}
+
+/* lines */
+
+.split-line > *:nth-child(even) {
+  border-left: 2px solid #ffffff;
 }
