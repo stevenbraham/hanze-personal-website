@@ -7,7 +7,7 @@ header, footer, main {
 
 .row {
   width: 100%;
-  padding: 5px 0px 5px;
+  padding: 2rem 0 2rem;
 }
 
 div[class^="col"] {
@@ -38,4 +38,19 @@ div[class^="col"] {
 
 .split-line > :first-child {
   border: none;
+}
+
+.content-center {
+  text-align: center;
+}
+
+.button {
+  background: $border-color;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: $border-color-hover;
 }

@@ -6,6 +6,9 @@
   background-color: transparent;
 }
 
-.icon-hobbies {
-  background-image: url('/images/icons/hobbies.svg');
+$icons: ('hobbies', 'football', 'gaming');
+@each $icon in $icons {
+  .icon-#{$icon} {
+    background-image: url('/images/icons/#{$icon}.svg');
+  }
 }

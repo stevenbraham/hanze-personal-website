@@ -26,12 +26,12 @@ header .row {
 #main-logo {
   background: url('/images/logo.svg') center center no-repeat;
   background-size: contain;
-  height: $header-height * (1/3);
   display: block;
 }
 
-#page-specific-info, #main-logo {
-  text-align: center;
+#main-logo, #page-specific-info {
+  min-height: $header-height * 0.5;
+
 }
 
 #topNav {

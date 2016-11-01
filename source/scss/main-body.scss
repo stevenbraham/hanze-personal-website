@@ -92,13 +92,15 @@ img {
 
 /* scroll up button */
 #scroll-up {
-  background: $border-color;
-  padding: 5px;
-  text-align: center;
-  text-transform: uppercase;
   width: 33%;
 }
 
-#scroll-up:hover {
-  background: $border-color-hover;
+#page-hobbies main i[class^="icon"] {
+  height: 18vh;
+  margin-bottom: 10px;
 }
+
+#page-hobbies main i[class^="icon"], #page-hobbies main .button {
+  width: 18vh;
+}
+
