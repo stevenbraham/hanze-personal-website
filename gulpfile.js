@@ -2,16 +2,12 @@
  * Created by stevenbraham on 24-10-16.
  */
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var connect = require('gulp-connect');
-var del = require('del');
-var runSequence = require('run-sequence');
-var handlebars = require('gulp-compile-handlebars');
-var htmlbeautify = require('gulp-html-beautify');
-var cssbeautify = require('gulp-cssbeautify');
 var fs = require('fs');
-var gulpLoadPlugins = require('gulp-load-plugins');
-var plugins = require('gulp-load-plugins')();
+var plugins = require('gulp-load-plugins')({
+    scope: ['devDependencies'],
+    pattern: ['*']
+});
 
 gulp.task('images', function () {
     gulp.src('source/images/**/*.jpg').pipe(plugins.imagemin()).pipe(gulp.dest('build/images'));
@@ -22,8 +18,8 @@ gulp.task('sass', function () {
     //     .pipe(sass())
     //     .pipe(gulp.dest('build/css'));
     return gulp.src('source/scss/style.scss')
-        .pipe(sass())
-        .pipe(cssbeautify())
+        .pipe(plugins.sass())
+        .pipe(plugins.cssbeautify())
         .pipe(gulp.dest('build/css'));
 });
 
@@ -41,7 +37,7 @@ gulp.task('watch', function () {
 
 //clean build dir
 gulp.task('clean', function () {
-    return del.sync('build');
+    return plugins.del.sync('build');
 })
 
 //webserver
@@ -50,7 +46,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('build', function (callback) {
-    runSequence(['clean', 'sass', 'handlebars', 'copy', 'images'],
+    plugins.runSequence(['clean', 'sass', 'handlebars', 'copy', 'images'],
         callback
     )
 });
@@ -109,11 +105,11 @@ gulp.task('handlebars', function () {
             }
         }
     }
-    return gulp.src('source/pages/*.html').pipe(handlebars(templateData, options)).pipe(htmlbeautify({
+    return gulp.src('source/pages/*.html').pipe(plugins.compileHandlebars(templateData, options)).pipe(plugins.htmlBeautify({
         indent_size: 4
     })).pipe(gulp.dest('build'));
 });
 
 gulp.task('default', function (callback) {
-    runSequence(['build', 'server', 'watch'], callback);
+    plugins.runSequence(['build', 'server', 'watch'], callback);
 });
