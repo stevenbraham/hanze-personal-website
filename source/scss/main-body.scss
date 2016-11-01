@@ -1,6 +1,7 @@
 /* Main body styles */
 main {
   margin: 2em 0 2em;
+  flex-grow: 1;
 }
 
 main p {
@@ -32,6 +33,7 @@ h3, figcaption {
 .image-button {
   min-width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .image-button:before {

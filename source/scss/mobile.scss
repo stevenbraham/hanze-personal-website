@@ -30,10 +30,11 @@ $mobilePadding: 5vw;
 
   div[class^="col"], #main-logo, #page-specific-info, .scroll-up {
     width: 100%;
+    margin: 0px;
   }
 
   header {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .row {

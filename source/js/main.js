@@ -14,4 +14,7 @@ $(function () {
         //scroll to the header tag in 300 ms
         $('html, body').animate({scrollTop: $("main section:nth-child(1)").offset().top}, 300);
     });
+    $('.image-button').click(function () {
+        window.location.href = $(this).find("a").attr("href");
+    });
 })

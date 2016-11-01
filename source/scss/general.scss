@@ -5,9 +5,14 @@ header, footer, .row, #topNav ul {
   justify-content: space-between;
 }
 
+body, html {
+  height: 100%;
+}
 /* General HTML tags */
 body {
   font-family: 'Istok Web', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header, footer, .image-button {

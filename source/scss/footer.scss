@@ -1,7 +1,7 @@
 /* Footer elements */
 
 footer {
-  height: $footer-height;
+  min-height: $footer-height;
   border-top: $line-height solid $border-color;
 }
 

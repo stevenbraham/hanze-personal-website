@@ -1,7 +1,7 @@
 /* Header elements */
 
 header {
-  height: $header-height;
+  min-height: $header-height;
   border-bottom: $line-height solid $border-color;
   text-transform: uppercase;
 }
