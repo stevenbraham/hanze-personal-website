@@ -66,6 +66,9 @@ h3, figcaption {
   font-size: 24px;
 }
 
+.image-button:hover {
+  background-size: inherit;
+}
 .image-button-content a:hover {
   background: $primary-color-hover;
 }
@@ -103,6 +106,10 @@ img {
 
 #page-hobbies main i[class^="icon"], #page-hobbies main .button {
   width: 18vh;
+}
+
+.facts {
+  padding: 10px;
 }
 
 .facts li {

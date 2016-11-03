@@ -46,7 +46,7 @@ gulp.task('server', function () {
 });
 
 gulp.task('build', function (callback) {
-    plugins.runSequence(['clean', 'sass', 'handlebars', 'copy', 'images'],
+    plugins.runSequence(['clean', 'sass', 'handlebars', 'copy'],
         callback
     )
 });
