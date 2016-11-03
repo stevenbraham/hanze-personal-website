@@ -24,7 +24,7 @@ header .row {
 }
 
 #main-logo {
-  background: url('/images/logo.svg') center center no-repeat;
+  background: url('/images/logo.svg') left center no-repeat;
   background-size: contain;
   display: block;
 }
@@ -34,8 +34,11 @@ header .row {
 
 }
 
+#page-home header h1 {
+  font-size: 1.5em;
+}
+
 #topNav {
-  position: absolute;
   top: 0px;
   text-transform: uppercase;
   width: (100vw - 2*$padding);
@@ -45,7 +48,7 @@ header .row {
   width: 100%;
 }
 
-#topNav a {
+#topNav a, #breadcrumbs li {
   display: inline-block;
   line-height: 2em;
 }
@@ -54,12 +57,20 @@ header .row {
   border-bottom: solid 2px #ffffff;
 }
 
+#breadcrumbs li:before {
+  content: "/ ";
+}
+
+#breadcrumbs li:first-child:before, li:last-child:before {
+  content: "";
+}
+
 #header-icon {
-  font-size: 3.5em;
+  font-size: 1.8em;
+  min-height: 1.8em;
 }
 
 #scroll-down {
-  position: absolute;
   bottom: 20px;
   display: none;
 }

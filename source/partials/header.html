@@ -18,12 +18,12 @@
 </head>
 <body id="page-{{pageId}}">
 <header>
-    <nav id="topNav">
+    <nav id="topNav" class="pos-absolute">
 
         <ul>
             {{#each headerMenu}}
             <li>
-                <a href="{{url}}" class="{{#compare ../pageId id operator='=='}}active{{/compare}}">{{label}}</a>
+                <a href="{{url}}" class="{{#compare ../setActive id operator='=='}}active{{/compare}}">{{label}}</a>
             </li>
             {{/each}}
         </ul>
@@ -37,9 +37,15 @@
             {{#if icon}}
             <i class="{{icon}}" id="header-icon"></i>
             {{/if}}
+            {{#if isGames}}
+            <ol id="breadcrumbs">
+                <li><a href="vrije-tijd.html">Vrije tijd</a></li>
+                <li><a href="games.html">Games</a></li>
+            </ol>
+            {{/if}}
         </div>
     </div>
-    <a id="scroll-down" class="center" href="#">
+    <a id="scroll-down" class="center pos-absolute" href="#">
         Scroll naar beneden <i class="fa fa-chevron-down"></i>
     </a>
 </header>

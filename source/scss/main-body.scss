@@ -93,6 +93,7 @@ img {
 /* scroll up button */
 #scroll-up {
   width: 33%;
+  margin-top: 1em;
 }
 
 #page-hobbies main i[class^="icon"] {
@@ -104,3 +105,39 @@ img {
   width: 18vh;
 }
 
+.facts li {
+  padding-top: 1em;
+}
+
+/* I use before instead of ul list style due to the reset.css and with before i have more control over the bullet images*/
+.facts li::before {
+  margin-right: 10px;
+  content: "";
+  background: no-repeat center center;
+  background-size: contain;
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+}
+
+#page-games .facts li::before {
+  background-image: url('/images/icons/gaming-blue.svg');
+}
+
+/* article list */
+
+.article-list h3 {
+  padding-top: 0;
+}
+
+.article-list article {
+  padding: 1em;
+}
+
+.article-list article:nth-child(even) {
+  background: $primary-color;
+}
+
+.article-list article:nth-child(even) p, .article-list article:nth-child(even) h3 {
+  color: white;
+}

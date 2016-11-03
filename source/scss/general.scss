@@ -1,20 +1,25 @@
 /* Display */
 
-header, footer, .row, #topNav ul, body {
+header, footer, .row, #topNav ul, body, #page-general-info {
   display: flex;
   justify-content: space-between;
+}
+
+.pos-absolute {
+  position: absolute;
 }
 
 body, html {
   height: 100%;
 }
+
 /* General HTML tags */
 body {
   font-family: 'Istok Web', sans-serif;
   flex-direction: column;
 }
 
-header, footer, .image-button {
+header, footer, .image-button, #page-specific-info {
   justify-content: center;
   align-items: center;
   color: white;
