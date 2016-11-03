@@ -131,6 +131,14 @@ img {
   background-image: url('/images/icons/gaming-blue.svg');
 }
 
+#page-sport .facts li::before {
+  background-image: url('/images/icons/football-blue.svg');
+}
+
+#page-sport iframe {
+  width: 100%;
+  height: 350px;
+}
 /* article list */
 
 .article-list h3 {
