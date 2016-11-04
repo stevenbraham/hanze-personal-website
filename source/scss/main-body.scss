@@ -156,3 +156,8 @@ img {
 .article-list article:nth-child(even) p, .article-list article:nth-child(even) h3 {
   color: white;
 }
+
+.full-width {
+  width: 100% !important;
+  height: auto;
+}

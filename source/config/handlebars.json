@@ -45,6 +45,10 @@
     {
       "label": "Design proces",
       "url": "design-proces.html"
+    },
+    {
+      "label": "Verantwoording",
+      "url": "verantwoording.html"
     }
   ],
   "stylesheets": [
