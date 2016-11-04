@@ -161,3 +161,17 @@ img {
   width: 100% !important;
   height: auto;
 }
+
+#watch-mobile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: $primary-color;
+  padding: 10px;
+  color: white;
+  max-width: 15vw;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
