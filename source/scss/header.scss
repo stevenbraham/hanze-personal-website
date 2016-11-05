@@ -31,7 +31,11 @@ header .row {
 
 #main-logo, #page-specific-info {
   min-height: $header-height * 0.5;
+}
 
+#page-specific-info {
+  display: flex;
+  flex-direction: column;
 }
 
 #page-home header h1 {
@@ -66,8 +70,8 @@ header .row {
 }
 
 #header-icon {
-  font-size: 1.8em;
-  min-height: 1.8em;
+  min-height: 7.5vh;
+  min-width: 7.5vh;
 }
 
 #scroll-down {

@@ -69,6 +69,7 @@ h3, figcaption {
 .image-button:hover {
   background-size: inherit;
 }
+
 .image-button-content a:hover {
   background: $primary-color-hover;
 }
@@ -82,6 +83,10 @@ img {
   img {
     height: 250px;
   }
+}
+
+#page-home img {
+  height: 250px;
 }
 
 .center, h2, figcaption {
@@ -139,6 +144,7 @@ img {
   width: 100%;
   height: 350px;
 }
+
 /* article list */
 
 .article-list h3 {
