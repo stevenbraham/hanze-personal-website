@@ -1,0 +1,59 @@
+/* home page elements */
+.image-button {
+  min-width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.image-button:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* initial ratio of 1:1*/
+}
+
+.image-button-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.image-button-content h3, .image-button-content p {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.image-button-content a {
+  display: block;
+  width: 100%;
+  background: $primary-color;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  font-size: 24px;
+}
+
+.image-button:hover {
+  background-size: inherit;
+}
+
+.image-button-content a:hover {
+  background: $primary-color-hover;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+@media screen and (min-height: 1080px) {
+  img {
+    height: 250px;
+  }
+}
+
+#page-home img {
+  height: 250px;
+}

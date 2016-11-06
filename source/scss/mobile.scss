@@ -2,25 +2,18 @@
 $mobilePadding: 5vw;
 @media only screen and (max-device-width: 850px) and (max-device-height: 850px) {
   header, footer, main {
-    padding: 0px $mobilePadding 0px;
+    padding: 0 $mobilePadding;
   }
 
-  #topNav {
+  .top-nav {
     width: 100%;
+    left: 0;
     background: $primary-color;
   }
 
-  #topNav a.active, #topNav a:hover, #topNav a:focus {
+  .top-nav a.active, .top-nav a:hover, .top-nav a:focus {
     border: none;
     background: $primary-color-hover;
-  }
-
-  #topNav a {
-
-  }
-
-  #line {
-    display: none;
   }
 
   #main-logo {
@@ -28,9 +21,9 @@ $mobilePadding: 5vw;
     margin-bottom: 5px;
   }
 
-  div[class^="col"], #main-logo, #page-specific-info, .scroll-up {
+  div[class^="col"], #main-logo, .page-specific-info, .scroll-up {
     width: 100%;
-    margin: 0px;
+    margin: 0;
   }
 
   header {
@@ -43,6 +36,10 @@ $mobilePadding: 5vw;
 
   h1 {
     font-size: 1.2em;
+  }
+
+  h3 {
+    width: 100%;
     text-align: center;
   }
 
@@ -55,8 +52,8 @@ $mobilePadding: 5vw;
     margin: auto;
   }
 
-  .split-line > div, .split-line > a, .split-line > li {
-    border: none;
+  .split-line > * {
+    border: none !important;
   }
 
   footer {
@@ -65,9 +62,5 @@ $mobilePadding: 5vw;
   }
   footer li {
     display: list-item;
-  }
-
-  #watch-mobile {
-    display: none !important;
   }
 }

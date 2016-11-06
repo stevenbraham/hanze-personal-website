@@ -1,13 +1,13 @@
 /* Item or page specific images */
 //image array
 $images: (
-        "#page-home header": "header/home",
-        "#page-general-info header": "header/general-info",
-        "#page-hobbies header": "header/hobbies",
-        "#page-games header": "header/games",
-        "#page-sport header": "header/sport",
-        "#page-future header": "header/future",
-        "#page-design header": "header/design",
+        ".page-home header": "header/home",
+        ".page-general-info header": "header/general-info",
+        ".page-hobbies header": "header/hobbies",
+        ".page-games header": "header/games",
+        ".page-sport header": "header/sport",
+        ".page-future header": "header/future",
+        ".page-design header": "header/design",
         "#image-button-general-info":"buttons/general-info",
         "#image-button-hobbies":"buttons/hobbies",
         "#image-button-future":"buttons/future"

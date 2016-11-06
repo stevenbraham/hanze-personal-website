@@ -1,12 +1,23 @@
 /* Display */
 
-header, footer, .row, #topNav ul, body, #page-general-info {
+.pos-absolute {
+  position: absolute;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-flex, .row {
   display: flex;
+}
+
+.flex-space-between, .row {
   justify-content: space-between;
 }
 
-.pos-absolute {
-  position: absolute;
+.flex-center {
+  justify-content: center;
 }
 
 body, html {
@@ -19,13 +30,13 @@ body {
   flex-direction: column;
 }
 
-header, footer, .image-button, #page-specific-info {
+header, footer, .image-button, .page-specific-info {
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-header, footer, .image-button, [class^="icon-"] {
+header, footer, .image-button, [class^="icon-"], .logo {
   background: $primary-color no-repeat center center;
   background-size: cover;
 }
@@ -41,8 +52,6 @@ nav a:hover, nav a:focus {
 
 nav li {
   display: inline-block;
-  text-align: center;
-  text-align: center;
 }
 
 h1 {

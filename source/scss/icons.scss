@@ -1,4 +1,5 @@
-/* icons */
+/* icons and logos*/
+
 [class^="icon-"] {
   height: 2.5em;
   display: block;
@@ -6,9 +7,31 @@
   background-color: transparent;
 }
 
-$icons: ('info', 'hobbies', 'football', 'football-light', 'gaming', 'gaming-light', 'time');
+$icons: ('logo', 'info', 'hobbies', 'football', 'football-light', 'gaming', 'gaming-light', 'time');
 @each $icon in $icons {
   .icon-#{$icon} {
     background-image: url('/images/icons/#{$icon}.svg');
   }
+}
+
+/* game logos */
+.logo {
+  color: transparent !important;
+  background-size: contain;
+}
+
+.call-of-duty {
+  background-image: url('/images/logos/cod.svg');
+}
+
+.runescape {
+  background-image: url('/images/logos/runescape.svg');
+}
+
+.counter-strike {
+  background-image: url('/images/logos/cs.svg');
+}
+
+.world-of-warcraft {
+  background-image: url('/images/logos/wow.svg');
 }

@@ -2,25 +2,25 @@
 "Grid"
 */
 header, footer, main {
-  padding: 0px $padding 0px;
+  padding: 0 $padding;
 }
 
 .row {
   width: 100%;
-  padding: 1rem 0 1rem;
+  padding: 1rem 0;
 }
 
 div[class^="col"] {
-  padding: 0px 5px 0px;
+  padding: 0 5px;
 }
 
 /* no padding at first and last child */
 .row > div[class^="col"]:nth-child(1) {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .row > div[class^="col"]:last-child {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 //generate col structure
@@ -40,18 +40,9 @@ div[class^="col"] {
   border: none;
 }
 
-.content-center {
-  text-align: center;
-}
-
-.content-right {
-  text-align: right;
-}
-
 .button {
   background: $border-color;
   padding: 5px;
-  text-align: center;
   text-transform: uppercase;
 }
 

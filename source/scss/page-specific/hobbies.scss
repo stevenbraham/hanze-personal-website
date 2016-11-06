@@ -1,0 +1,63 @@
+.page-hobbies main a[class^="icon"] {
+  height: 18vh;
+  margin-bottom: 10px;
+}
+
+.page-hobbies main a[class^="icon"], .page-hobbies main .button {
+  width: 18vh;
+}
+
+.facts {
+  padding: 10px;
+}
+
+.facts li {
+  padding-top: 1em;
+}
+
+/* I use before instead of ul list style due to the reset.css and with before i have more control over the bullet images*/
+.facts li::before {
+  margin-right: 10px;
+  content: "";
+  background: no-repeat center center;
+  background-size: contain;
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+}
+
+.page-games .facts li::before {
+  background-image: url('/images/icons/gaming-blue.svg');
+}
+
+.page-sport .facts li::before {
+  background-image: url('/images/icons/football-blue.svg');
+}
+
+.page-sport iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* article list */
+
+.article-list h3 {
+  padding-top: 0;
+}
+
+.article-list article {
+  padding: 1em;
+}
+
+.article-list article:nth-child(even) {
+  background: $primary-color;
+}
+
+.article-list article:nth-child(even) p, .article-list article:nth-child(even) h3 {
+  color: white;
+}
+
+.full-width {
+  width: 100% !important;
+  height: auto;
+}

@@ -23,49 +23,42 @@ header .row {
   margin: auto;
 }
 
-#main-logo {
-  background: url('/images/logo.svg') left center no-repeat;
-  background-size: contain;
-  display: block;
-}
-
-#main-logo, #page-specific-info {
+#main-logo, .page-specific-info {
   min-height: $header-height * 0.5;
 }
 
-#page-specific-info {
-  display: flex;
+.page-specific-info {
   flex-direction: column;
 }
 
-#page-home header h1 {
+.page-home header h1 {
   font-size: 1.5em;
 }
 
-#topNav {
-  top: 0px;
+.top-nav {
+  top: 0;
   text-transform: uppercase;
   width: (100vw - 2*$padding);
 }
 
-#topNav li, #topNav a {
+.top-nav li, .top-nav a {
   width: 100%;
 }
 
-#topNav a, #breadcrumbs li {
+.top-nav a, .breadcrumbs li {
   display: inline-block;
   line-height: 2em;
 }
 
-#topNav a.active, #topNav a:hover, #topNav a:focus {
+.top-nav a.active, .top-nav a:hover, .top-nav a:focus {
   border-bottom: solid 2px #ffffff;
 }
 
-#breadcrumbs li:before {
+.breadcrumbs li:before {
   content: "/ ";
 }
 
-#breadcrumbs li:first-child:before, li:last-child:before {
+.breadcrumbs li:first-child:before, li:last-child:before {
   content: "";
 }
 

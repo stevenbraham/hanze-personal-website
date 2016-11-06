@@ -16,11 +16,10 @@
     <link rel="stylesheet" type="text/css" href="{{this}}"/>
     {{/each}}
 </head>
-<body id="page-{{pageId}}">
-<header>
-    <nav id="topNav" class="pos-absolute">
-
-        <ul>
+<body class="display-flex flex-space-between page-{{pageId}}">
+<header class="display-flex flex-center">
+    <nav class="top-nav pos-absolute">
+        <ul class="display-flex flex-space-between">
             {{#each headerMenu}}
             <li>
                 <a href="{{url}}" class="{{#compare ../setActive id operator='=='}}active{{/compare}}">{{label}}</a>
@@ -30,21 +29,21 @@
     </nav>
     <div class="row split-line">
         <div class="col-6 content-center">
-            <a id="main-logo" href="/index.html"></a>
+            <a id="main-logo" class="icon-logo logo" href="/index.html"></a>
         </div>
-        <div class="col-6 content-center" id="page-specific-info">
+        <div class="col-6 display-flex flex-center page-specific-info">
             <h1>{{title}}</h1>
             {{#if icon}}
             <i class="{{icon}}" id="header-icon"></i>
             {{/if}}
             {{#if isGames}}
-            <ol id="breadcrumbs">
+            <ol class="breadcrumbs">
                 <li><a href="vrije-tijd.html">Vrije tijd</a></li>
                 <li><a href="games.html">Games</a></li>
             </ol>
             {{/if}}
             {{#if isSport}}
-            <ol id="breadcrumbs">
+            <ol class="breadcrumbs">
                 <li><a href="vrije-tijd.html">Vrije tijd</a></li>
                 <li><a href="sport.html">Sport</a></li>
             </ol>
