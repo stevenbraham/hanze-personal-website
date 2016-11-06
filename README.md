@@ -12,7 +12,7 @@ Therefore I decided to experiment a bit with frontend tech I had rarely used: Gu
 3. Clone this repository
 4. Run `npm install`
 
-Afterwards npm fire the `gulp build` command. This command copies everything from source to build and compiles the Sass and Handlebars files.
+Afterwards npm will fire the `gulp build` command. This command copies everything from source to build and compiles the Sass and Handlebars files.
 
 An automated file watcher and webserver is included in the gulp file and can be executed by running `gulp`. This will start a webserver on [http://localhost:8080](http://localhost:8080).
 

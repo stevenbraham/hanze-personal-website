@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevenbraham/lars.git"
+    "url": "git+https://github.com/stevenbraham/hanze-personal-website.git"
   },
   "author": "Steven Braham <steven@braham.biz>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/stevenbraham/lars/issues"
+    "url": "https://github.com/stevenbraham/hanze-personal-website/issues"
   },
-  "homepage": "https://github.com/stevenbraham/lars#readme",
+  "homepage": "https://github.com/stevenbraham/hanze-personal-website#readme",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",

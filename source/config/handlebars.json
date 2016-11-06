@@ -51,11 +51,6 @@
       "url": "verantwoording.html"
     }
   ],
-  "stylesheets": [
-    "//fonts.googleapis.com/css?family=Istok+Web",
-    "//yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css",
-    "css/style.css"
-  ],
   "metaTags": [
     {
       "name": "theme-color",
