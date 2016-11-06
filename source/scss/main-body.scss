@@ -61,12 +61,12 @@ h3, figcaption {
 @import "page-specific/hobbies";
 @import "page-specific/sitemap";
 /* long text styles for improved read */
-.long-text h2, figcaption {
+.long-text h2, .long-text figcaption {
   width: 100%;
   text-align: left;
 }
 
-.long-text p {
+p {
   line-height: 150%;
   font-size: 1.2rem;
 }
