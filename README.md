@@ -2,9 +2,9 @@
 # About this repository #
 For a school assignment I had to create a html website based on Sketch design I had designed earlier. The school assignment was very simple, because it was the first graded assignment of the first year.
 
-I just had to create valid html and css based on the pages on my design. Futhermore the website only needed to work in the latest version of Chrome, Firefox and Edge and there were no rules about responsive design.
+I just had to create valid html and css based on the pages on my design. Furthermore the website only needed to work in the latest version of Chrome, Firefox and Edge and there were no rules about responsive design.
 
-Therefore I decided to experiment a bit with frontend techn I had rarely used: Gulp, Handlebars and Sass. The result is a modular html site with a lot of reusable html partials for the project.
+Therefore I decided to experiment a bit with frontend tech I had rarely used: Gulp, Handlebars and Sass. The result is a modular html site with a lot of reusable html partials for the project.
 
 # How to build and dev
 1. If you haven't already, please install the latest [NodeJS version for your OS](https://nodejs.org/)
@@ -14,8 +14,11 @@ Therefore I decided to experiment a bit with frontend techn I had rarely used: G
 
 Afterwards npm fire the `gulp build` command. This command copies everything from source to build and compiles the Sass and Handlebars files.
 
-An automated file watcher and webserver is included in the gulp file and can be executed by running `gulp`. This will start a webserver on [http://localhost:8080](http://localhost:8080). **Without a webserver you can't view the website properly due to the usage of relative urls**
+An automated file watcher and webserver is included in the gulp file and can be executed by running `gulp`. This will start a webserver on [http://localhost:8080](http://localhost:8080).
 
+__Important__:
+* **Without a webserver you can't view the website properly due to the usage of relative urls**
+* **There was a weird requirement for the code to be formatted with tabs instead of spaces. Therefore the gulp build will replace the spaces with tabs**
 # File layout #
 Like I said everything is contained in the source dir:
 * *source/config* contains json files used by the gulp file.

@@ -19,7 +19,9 @@ gulp.task('sass', function () {
     //     .pipe(gulp.dest('build/css'));
     return gulp.src('source/scss/style.scss')
         .pipe(plugins.sass())
-        .pipe(plugins.cssbeautify())
+        .pipe(plugins.cssbeautify({
+            indent: "\t"
+        }))
         .pipe(gulp.dest('build/css'));
 });
 
@@ -106,7 +108,7 @@ gulp.task('handlebars', function () {
         }
     }
     return gulp.src('source/pages/*.html').pipe(plugins.compileHandlebars(templateData, options)).pipe(plugins.htmlBeautify({
-        indent_size: 4
+        indent_size: 4, "indent_with_tabs": true
     })).pipe(gulp.dest('build'));
 });
 
