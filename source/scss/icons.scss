@@ -7,7 +7,7 @@
   background-color: transparent;
 }
 
-$icons: ('logo', 'info', 'hobbies', 'football', 'football-light', 'gaming', 'gaming-light', 'time');
+$icons: ('logo', 'info', 'hobbies', 'football', 'football-light', 'gaming', 'gaming-light', 'time', 'map');
 @each $icon in $icons {
   .icon-#{$icon} {
     background-image: url('/images/icons/#{$icon}.svg');

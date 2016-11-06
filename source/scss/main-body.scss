@@ -2,9 +2,6 @@
 main {
   margin: 2em 0 2em;
   flex-grow: 1;
-}
-
-main p {
   color: #373737;
 }
 
@@ -53,4 +50,4 @@ h3, figcaption {
 }
 
 @import "page-specific/hobbies";
-
+@import "page-specific/sitemap";
