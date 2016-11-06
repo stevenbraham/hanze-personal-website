@@ -1,34 +1,32 @@
 {{> header title="Welkom, Wilkommen, Welcome, Bienvenue Op de website van Lars Bäcker!" pageId="home" setActive="home" description="Lars is een 19 jarige jongen uit Groningen, op deze website kunt u allerlei informatie over hem vinden."}}
-<section>
-    <div class="row">
-        <div class="row col-12">
-            <img src="/images/content/lars.jpg" alt="lars" class="center circle">
+<article>
+    <section>
+        <div class="row">
+            <div class="row col-12">
+                <img src="/images/content/lars.jpg" alt="lars" class="center circle">
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <p class="content-center">
-                Lars is een 19-jarige jongen uit Groningen, op deze website kunt u allerlei informatie over hem vinden.
-            </p>
+        <div class="row">
+            <div class="col-12">
+                <p class="content-center">
+                    Lars is een 19-jarige jongen uit Groningen, op deze website kunt u allerlei informatie over hem vinden.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="row">
-        <div class="col-12">
-            <h2>Onderwerpen</h2>
+    </section>
+    <section>
+        <h2>Onderwerpen</h2>
+        <div class="row">
+            <div class="col-4">
+                {{>imageButton title="Algemeen" description="Lees hier het levensverhaal van Lars" pageId="general-info" href="algemeen.html"}}
+            </div>
+            <div class="col-4">
+                {{>imageButton title="Vrije tijd" description="Welke games doet Lars? Doet hij aan sport?" pageId="hobbies" href="vrije-tijd.html"}}
+            </div>
+            <div class="col-4">
+                {{>imageButton title="Toekomst" description="Wat wil Lars gaan doen na zijn studie" pageId="future" href="toekomst.html"}}
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            {{>imageButton title="Algemeen" description="Lees hier het levensverhaal van Lars" pageId="general-info" href="algemeen.html"}}
-        </div>
-        <div class="col-4">
-            {{>imageButton title="Vrije tijd" description="Welke games doet Lars? Doet hij aan sport?" pageId="hobbies" href="vrije-tijd.html"}}
-        </div>
-        <div class="col-4">
-            {{>imageButton title="Toekomst" description="Wat wil Lars gaan doen na zijn studie" pageId="future" href="toekomst.html"}}
-        </div>
-    </div>
-</section>
+    </section>
+</article>
 {{> footer}}
