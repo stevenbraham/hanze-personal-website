@@ -1,4 +1,4 @@
-![travis](https://travis-ci.org/stevenbraham/lars.svg?branch=master)
+[![travis](https://travis-ci.org/stevenbraham/lars.svg?branch=master)](https://travis-ci.org/stevenbraham/lars)
 # About this repository #
 For a school assignment I had to create a html website based on Sketch design I had designed earlier. The school assignment was very simple, because it was the first graded assignment of the first year.
 
