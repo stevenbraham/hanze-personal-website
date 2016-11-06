@@ -19,6 +19,7 @@ An automated file watcher and webserver is included in the gulp file and can be 
 __Important__:
 * **Without a webserver you can't view the website properly due to the usage of relative urls**
 * **There was a weird requirement for the code to be formatted with tabs instead of spaces. Therefore the gulp build will replace the spaces with tabs**
+
 # File layout #
 Like I said everything is contained in the source dir:
 * *source/config* contains json files used by the gulp file.
