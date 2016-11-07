@@ -17,9 +17,9 @@ $icons: ('logo', 'info', 'hobbies', 'football', 'football-light', 'gaming', 'gam
 /* game logos */
 .logo {
   color: transparent !important;
-  background-color: transparent !important;
+  background-color: inherit !important;
   background-size: contain;
-  background-position-x: left;
+  background-position: left center;
 }
 
 .call-of-duty {

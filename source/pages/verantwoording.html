@@ -1,0 +1,166 @@
+{{> header description="Lees hier waarom bepaalde keuzes zijn gemaakt" pageId="justification" title="Verantwoording" icon="icon-info"}}
+<article class="long-text">
+    <section>
+        <h2>PW - 3</h2>
+        <p>Ik heb geprobeerd in mijn ontwerp zoveel mogelijk gebruik te maken van de heuristieken van Nielsen en de Gestaltprincipes. Die ik ga nu toelichten.</p>
+        <section>
+            <h3>Gestaltprincipes</h3>
+            <h4>Smallness</h4>
+            <p>
+                Smallness houdt in dat elementen die kleiner zijn als voorgrond worden gezien. Dit heb ik toegepast in de header. Hierin zijn in de grote blauwe header de kleinere witte pagina iconen en de paginatitels te zien. De gebruiker weet dan deze onderdeel zijn van de header van de pagina.
+                En
+                ook de blokken lijst met de games logos maakt hier gebruik van.
+            </p>
+            <h4>Proximity</h4>
+            <p>
+                Dit is een van de meest gebruikte Gestaltprincipes in mijn ontwerp. Proximity of nabijheid houdt in dat elementen die dichtbij elkaar staan gegroepeerd worden door mensen. Dit komt bijvoorbeeld terug in de kopjes die dichtbij de teksten staan, waardoor mensen de tekst automatisch
+                onderbewust op delen in secties.
+            </p>
+            <p>
+                Daarnaast staan elementen die bij elkaar horen zoals navigatie knoppen of bijvoorbeeld de plaatjesknoppen op de homepage op afstand van andere elementen op de pagina. Hierdoor kan geen verwarring ontstaan of een knop zichzelf staat of bij een tekst hoort.
+            </p>
+            <h4>Similarity</h4>
+            <p>
+                Similarity of gelijkheid is een ander veel gebruikt principe op deze website. Dit zorgt ervoor als mensen eenmaal door hebben wat een bepaalt element doet, ze ook snappen wat andere elementen die erop lijken doen. Bijvoorbeeld alle menu items in het hoofdmenu krijgen een streep als
+                ze geselecteerd zijn en ook lijken alle plaatjes knoppen op de homepagina op elkaar.
+            </p>
+            <h4>Symmetry</h4>
+            <p>
+                Hierdoor worden elementen bij elkaar gegroepeerd op basis van vorm en positie. De twee categorie knoppen op de vrije tijd pagina zijn hiermee gescheiden. Die zijn bijna identiek aan elkaar: ze hebben allebei een grijs logo + een groene knop en staan op dezelfde afstand van de groene
+                lijn in het midden.
+            </p>
+            <h4>Continuity</h4>
+            <p>
+                Elementen worden gegroepeerd op basis van welke elementen het meest logische pad vormen. Bijvoorbeeld de afbeeldingen knoppen op de homepage staan op dezelfde regel uitgelijnd. Mensen zullen denken dat deze bij elkaar horen als de knopen van links naar rechts lezen.
+            <p>
+        </section>
+        <section>
+            <h3>Heuristieken van Nielsen</h3>
+            <p>
+                Naast de Gestaltprincipes heb ik dus geprobeerd een aantal heuristieken van Nielsen in deze ontwerp te gebruiken:
+            </p>
+            <h4> Visibility of system status</h4>
+            <p>
+                Dit is meer een verantwoordelijk van de browser, aangezien op de website geen zware en lange processen worden ingevoerd, waardoor deze instant laat en je dus eigenlijk nooit een laad icon zult zien.
+            </p>
+            <h4> Match between system and the real world</h4>
+            <p>
+                Ik heb geprobeerd dit te realiseren door gebruik te maken van iconen die zoveel mogelijk lijken op objecten uit de echte wereld. Bijvoorbeeld de knop ga naar boven, bevat een pijl die omhoog gaat, de sitemap heeft als icon een kaart, bij de vrije tijd pagina wordt een voetbal
+                gebruikt
+                om sport uit te beelden.
+            </p>
+            <h4> User control and freedom</h4>
+            <p>
+                De gebruiker wordt nergens op de website gedwongen om een bepaalde handeling uit te voeren en kan altijd elke pagina verlaten.
+            </p>
+            <h4> Consistency and standards</h4>
+            <p>
+                Alle elementen zijn uitgelijnd op een grid en hebben dus altijd dezelfde hoogte en breedte verhoudingen. Daarnaast hebben de meeste elementen dezelfde blauwe kleur. Ook maakt de website gebruik van veelgebruikte websitedesignelementen, zoals links bovenin een klikbaar logo en een
+                menu in de header en footer.
+            </p>
+            <h4> Aesthetic and minimalist design</h4>
+            <p>
+                Ik heb geprobeerd het design zo simpel mogelijk te houden, om aan de wensen van Lars te voldoen en ook om het voor de gebruiker simpel te houden. Alle elementen zijn opgebouwd uit herkenbare en simpele rechthoeken of vierkanten.
+            </p>
+            <h4> Help and documentation</h4>
+            <p>
+                De meeste elementen veranderen van kleur als er overheen gehoverd worden met de muis om aan te geven dat ze klikbaar zijn. Ook verschijnt in het ontwerpproces een tool tip als men over een afbeelding heen beweegt met de tekst: “klik voor een grotere afbeelding.”
+            </p>
+
+        </section>
+    </section>
+    <section>
+        <h2>PW - 4</h2>
+        <p>
+            Voor het coderen van deze website gelden de volgende bijzonderheden:
+        </p>
+        <p>
+            Ten eerste gebruik de CSS reset file van Yahoo. Deze zorgt ervoor dat voor alle elementen de margins en paddings naar 0 worden gezet, zodat deze in elke browser hetzelfde eruit zien.
+        </p>
+        <p>
+            Daarnaast laad ik van Google Fonts een stylesheet in. Dit doe ik niet met import, omdat ik uit ervaring weet dat het beter is om meerdere om meerde link elementen te hebben dan import te gebruiken, omdat de browser meerdere stylesheets uit link elementen parallel kan inladen. Dit is niet
+            mogelijk met import, omdat de browser eerst de hele stylesheet moet inladen om alle import statements te parsen.
+        </p>
+        <p>
+            Verder maak ik gebruik van Font Awesome. Dit is een veelgebruikte library met kant en klare svg iconen voor websites. Ik heb wel zelf de svg iconen gemaakt in de header, maar voor bijvoorbeeld de pijltjes in de knoppen gebruik ik font awesome.
+        </p>
+        <p>
+            Ik heb ook doormiddel van jQuery een kleine js file gemaakt, die de pagina naar boven of naar beneden scrollt als er gelikt wordt op een scroll up of scroll down button. Deze code heb ik zelf getypt en voorzien van commentaar.
+        </p>
+        <p>
+            Voor het inladen van code van een CDN zoals die van jQuery of Font Awesome, maak ik gebruik van speciale urls die beginnen met // i.p.v. https of http. De browser kiest dan zelf welk protocol het snelste en veiligste is in de situatie.
+        </p>
+        <p>
+            Ik heb heel veel meta tags en faviconen toegevoegd, zodat er voor elk apparaat het juiste icon wordt ingeladen.
+        </p>
+        <p>
+            Ik heb geen gebruik gemaakt van het 960px grid, maar mijn eigen grid gemaakt op basis van 12 kolommen. Elke kolom heeft een breedte van 1/12 deel van 100% en een alle kolommen, behalve nr. 1 en de laatste, hebben een padding van 5px om ruimte te krijgen. Tussen elke row zit ook een
+            paddig van 1em. Ik heb begrepen van de docent dat dit toegestaan is zolang je het goed toelicht.
+        </p>
+        <p>
+            De meta keywords heb ik een beetje verwaarloost, omdat ik persoonlijk hier het nut niet van inzie, aangezien deze al 10 jaar niet meer door Google wordt gebruikt.
+        </p>
+        <p>
+            Ik krijg veel waarschuwingen op W3C over mijn section en article gebruik. Hier missen volgens w3c headings in, maar dit komt omdat die dan 1 of 2 element(en) lager zitten in de rows en cols.
+        </p>
+        <h3>Mijn build systeem</h3>
+        <p>De code die op de ftp server staat, is niet de “echte” code. De volledige code staat in de zip op blackboard en op <a href="https://github.com/stevenbraham/hanze-personal-website" target="_blank">deze Github pagina</a>. Ik heb net als een Mark met gulp en sass een build systeem gemaakt.
+            Mijn systeem werkt met HandleBars.js. Dit is ook een template language, die ik op mijn werk veel gebruik. Daarom heb ik ervoor gekozen om met Handlebars en niet
+            met Nunchucks.js templates te maken. </p>
+
+        <p>Mijn systeem werkt als volgt: ik laadt een handlebars.json in met gulp. Hierin staan een aantal constanten zoals een lijst met de menu items. Ik heb ook een map met sass bestanden voor de stylesheet en een map met handlebars files. Deze handlebars files bevatten herbruikbare deel
+            elementen zoals de header waaraan ik parameters kan meegeven zoals de pagina titel en het icon dat moet worden gebruikt:
+            <code> \{{> header description="Lees hier waarom bepaalde keuzes zijn gemaakt" pageId="justification" title="Verantwoording" icon="icon-info"}}</code>
+        </p>
+        <p>Ook maak ik veel gebruik van Sass. Bijvoorbeeld voor het opstellen van de css voor de header afbeeldingen:</p>
+        <code>
+        <pre>
+            /* Item or page specific images */
+            //image array
+            $images: (
+            ".page-home header": "header/home",
+            ".page-general-info header": "header/general-info",
+            ".page-hobbies header": "header/hobbies",
+            ".page-games header": "header/games",
+            ".page-sport header": "header/sport",
+            ".page-future header": "header/future",
+            ".page-design header": "header/design",
+            ".page-sitemap header": "header/sitemap",
+            ".page-justification header": "header/justification",
+            "#image-button-general-info":"buttons/general-info",
+            "#image-button-hobbies":"buttons/hobbies",
+            "#image-button-future":"buttons/future"
+            );
+
+            @each $selector, $path in $images {
+            #{$selector} {
+            background-image: url('/images/#{$path}-1x.jpg');
+            }
+            }
+
+            /* 2x styles */
+            @media screen and (min-width: 1440px) and (max-width: 2560px) {
+            @each $selector, $path in $images {
+            #{$selector} {
+            background-image: url('/images/#{$path}-2x.jpg');
+            }
+            }
+            }
+
+            /* 3x styles */
+            @media screen and (min-width: 2560px) {
+            @each $selector, $path in $images {
+            #{$selector} {
+            background-image: url('/images/#{$path}-3x.jpg');
+            }
+            }
+            }
+            </pre>
+        </code>
+        <p>Doormiddel van het uitvoeren van het commando <code>gulp build</code> worden alle bestanden gecompileerd en naar de build map gekopieerd. Daarnaast maak ik gebruik van gulp plugins die automatisch alle html en css code voorzien van tabs i.p.v. spaties. De orginele broncode in de source
+            folder is wel met spaties, omdat mijn editor (PHPStorm) is ingesteld om gebruik te maken van officiële standaarden van <a href="https://google.github.io/styleguide/cppguide.html#Spaces_vs._Tabs" target="_blank">Google</a> en <a
+                    href="https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces" target="_blank">Python</a>. Op mijn werk maken wij ook gebruiik van deze standaarden.</p>
+    </section>
+</article>
+{{> scrollUpButton}}
+{{> footer}}
